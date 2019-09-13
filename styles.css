@@ -1,0 +1,287 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* START NAV */
+nav{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: rgb(37, 37, 37);
+   
+    
+}
+
+nav ul{
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul a{
+    text-decoration: none;
+    font-size: 22px;
+    color: whitesmoke;
+    
+}
+/* END NAV */
+
+/* START WELCOME SECTION */
+#welcome-section{
+    background-color: rgb(37, 37, 37);
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#welcome-section h1{
+    color: whitesmoke;
+    font-size: 50px;
+}
+
+.colorLetterC{
+    color: #b8343d;
+}
+
+
+#welcome-section h2{
+    color: rgb(69, 105, 223);
+    font-size: 26px;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* END WELCOME SECTION */
+
+
+/* START ABOUT SECTION*/
+#about-section{
+    background-color: #2c2c2c;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    text-align: center;
+}
+
+#about-section img{
+    width: 200px;
+    margin: 40px auto;
+    border-radius: 50%;
+}
+
+h2, p{
+    color: whitesmoke;
+}
+
+p{
+    text-align: left;
+    width: 90%;
+    margin: 10px auto;
+    margin-bottom: 40px;
+}
+
+
+
+/* END ABOUT SECTION*/
+
+/* START PROJECTS SECTION */
+#projects{
+    height: 100%; 
+    background-color: rgb(59, 47, 39);
+}
+
+#projects h1{
+    text-align: center;
+    font-size: 35px;
+    color: whitesmoke;
+    padding-top: 40px;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+#projects hr{
+    margin: 10px 2% 20px 2%;
+}
+
+.flexbox_Projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-tile{  
+    margin-top: 20px;
+}
+
+.project-tile p{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: -5px;
+    width: 100%;
+    background-color: rgb(17, 17, 17);
+}
+
+#projects img{
+    width: 100%;
+}
+
+#projects #showAllButton{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 22px;
+    width: 120px;
+    text-align: center;
+    display: block;
+    margin: 40px auto;  
+    padding: 10px;
+    background-color: rgb(48, 74, 156);
+    border-radius: 2px;
+}
+
+#projects hr{
+    display: block;
+    margin: 0px;
+}
+
+
+/* END PROJECTS SECTION */
+
+/* START CONTACT SECTION */
+#contact{
+    height: 70vh;
+    background-color: rgb(37, 41, 41);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#contact h1{
+    text-align: center;  
+    color: whitesmoke;
+    font-size: 34px;
+}
+
+#contact p{
+    color: rgb(192, 154, 154);
+    font-size: 20px;
+    text-align: center;
+}
+
+#contact #flex-links{
+    display: flex;
+    height: 25vh;
+}
+
+#contact #flex-links a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+#contact img{
+    width: 60px;
+}
+
+#flex-links #Facebook{
+    align-self: flex-end;
+}
+
+#flex-links #Send_mail{
+    align-self: flex-end;
+}
+
+#contact hr{
+    color: red;
+    background-color: red;
+}
+/* END CONTACT SECTION */
+
+
+/* Sections division */
+hr#section_division{
+    height: 4px;
+    background-color: rgb(119, 51, 51);
+    border: none;
+}
+
+
+/* START FOOTER SECTION */
+footer{
+    height: 40vh;
+    background-color: rgb(37, 41, 41);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer p{
+    text-align: center;
+    color: whitesmoke;
+}
+/* END FOOTER SECTION */
+
+
+
+/* MORE OTHER THAN PHONES */
+@media (min-width: 525px){
+    #about-section img{
+        width: 40%;
+    }
+
+    #about-section p{
+        width: 80%;
+    }
+
+    #about-section img{
+        margin: 50px auto;
+        border-radius: 50%;
+    }
+    
+    #contact #flex-links{
+        width: 65vw;
+        height: 25vh;
+        justify-content: space-evenly;   
+    }
+
+    #contact img{
+        width: 80px;
+    }
+
+    .project-tile{
+        width: 50%;
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 1000px){
+    #welcome-section h1{
+        color: whitesmoke;
+        font-size: 70px;
+    }
+
+    #about-section img{
+        width: 400px;
+    }
+    
+    #flex-links #Facebook{
+        align-self: initial;
+    }
+    
+    #flex-links #Send_mail{
+        align-self: initial;
+        margin-top: 20px;
+    }
+
+    #contact img{
+        width: 120px;
+    }
+}
