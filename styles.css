@@ -73,6 +73,9 @@ nav ul a{
     width: 200px;
     margin: 40px auto;
     border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.75);
 }
 
 h2, p{
@@ -116,7 +119,11 @@ p{
 }
 
 .project-tile{  
+    width: 100%;
     margin-top: 20px;
+    -webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.75);
 }
 
 .project-tile p{
@@ -125,8 +132,9 @@ p{
     font-size: 20px;
     padding: 10px;
     margin-top: -5px;
+    margin-bottom: 0px;
     width: 100%;
-    background-color: rgb(17, 17, 17);
+    background-color: rgb(17, 17, 17);  
 }
 
 #projects img{
@@ -144,6 +152,9 @@ p{
     padding: 10px;
     background-color: rgb(48, 74, 156);
     border-radius: 2px;
+    -webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.55);
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.55);
 }
 
 #projects hr{
@@ -257,7 +268,7 @@ footer p{
     }
 
     .project-tile{
-        width: 50%;
+        width: 60%;
         margin-top: 20px;
     }
 }
@@ -266,6 +277,17 @@ footer p{
     #welcome-section h1{
         color: whitesmoke;
         font-size: 70px;
+    }
+
+    .flexbox_Projects{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .project-tile{  
+        max-width: 35%;
+        margin-top: 40px;
     }
 
     #about-section img{
